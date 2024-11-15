@@ -3,11 +3,11 @@ export const APP_CONFIG = {
   theme_id: 'corporate' as const,
   branding: {
     logo: {
-      url: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=100&h=100&q=80',
-      alt: 'VoteInformer Logo',
+      url: '/images/optiml_logo.png',
+      alt: 'Optiml Logo',
     },
     company: {
-      name: 'VoteInformer',
+      name: 'Optiml',
       year: '2024',
     },
   },

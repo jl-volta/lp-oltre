@@ -91,6 +91,8 @@ export default function Hero() {
                     </ScaleIn>
                   </div>
                 </form>
+
+                <p className="text-xs text-gray-500 pt-3">Try our product free for 2 weeks - no credit card required</p>
               </FadeIn>
             </div>
 

@@ -29,14 +29,14 @@ export default function HeroCard({
       </div>
 
       {/* Info Label */}
-      <div className="absolute left-3 right-3 bottom-3">
+      {/* <div className="absolute left-3 right-3 bottom-3">
         <div className="flex items-center gap-2 bg-white/95 backdrop-blur-sm rounded-full p-1.5 pl-2.5 pr-3.5 shadow-lg">
           <div className={`${theme.styles.primary} rounded-full p-1.5`}>
             <Info className="w-3 h-3 text-white" />
           </div>
           <span className="text-xs font-medium text-gray-800">{text}</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

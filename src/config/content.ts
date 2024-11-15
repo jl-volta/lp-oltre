@@ -6,6 +6,18 @@ import {
   Code2,
   Rocket,
   Users,
+  Heart,
+  Home,
+  Plane,
+  Calculator,
+  Clock,
+  DollarSign,
+  Calendar,
+  PiggyBank,
+  TrendingUp,
+  FileText,
+  Coins,
+  Scale,
 } from 'lucide-react';
 
 export const defaultContent = {
@@ -21,17 +33,17 @@ export const defaultContent = {
     cards: [
       {
         image:
-          'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+          '/images/couple_couch.webp',
         text: 'Saved X% in their first year',
       },
       {
         image:
-          'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+          '/images/guy_beach.webp',
         text: 'Identified 4 missed opportunities',
       },
       {
         image:
-          'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+          '/images/girl_golf.webp',
         text: 'Optimized retirement strategy',
       },
     ],
@@ -97,11 +109,29 @@ export const defaultContent = {
       description:
         'Optiml allows you to uncover insights tailored to your unique situation. Easily adjust based on life events and plan ahead for unexpected circumstances.',
       image:
-        'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
-      benefits: [
-        'Adjust based on life events',
-        'Plan ahead for unexpected circumstances',
-        'Personalized retirement strategies',
+        '/images/couple_couch.webp',
+      // benefits: [
+      //   'Adjust based on life events',
+      //   'Plan ahead for unexpected circumstances',
+      //   'Personalized retirement strategies',
+      // ],
+      events: [
+        {
+          icon: Heart,
+          text: 'Planning to retire early at 62 to focus on health',
+        },
+        {
+          icon: Home,
+          text: 'Downsizing home after children move out',
+        },
+        {
+          icon: Plane,
+          text: 'Starting RV travel after retiring next year',
+        },
+        {
+          icon: Calculator,
+          text: 'Taking Social Security at age 67 vs 70',
+        },
       ],
       imagePosition: 'left',
     },
@@ -110,11 +140,29 @@ export const defaultContent = {
       description:
         'Get easy-to-understand insights on the health of your retirement plan. Know exactly how much and when to withdraw, and determine the optimal age to start CPP & Old Age Security.',
       image:
-        'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
-      benefits: [
-        'Know when and how much to withdraw',
-        'Determine optimal age for benefits',
-        'Run what-if scenarios',
+        '/images/guy_beach.webp',
+      // benefits: [
+      //   'Know when and how much to withdraw',
+      //   'Determine optimal age for benefits',
+      //   'Run what-if scenarios',
+      // ],
+      events: [
+        {
+          icon: Clock,
+          text: 'Optimal timing for CPP and OAS benefits',
+        },
+        {
+          icon: DollarSign,
+          text: 'Monthly withdrawal recommendations',
+        },
+        {
+          icon: Calendar,
+          text: 'Year-by-year income planning',
+        },
+        {
+          icon: PiggyBank,
+          text: 'Strategic account withdrawal ordering',
+        },
       ],
       imagePosition: 'right',
     },
@@ -123,11 +171,29 @@ export const defaultContent = {
       description:
         'Have confidence in making the best decisions for you and your loved ones. Minimize taxation over time and stay informed on regulatory changes.',
       image:
-        'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
-      benefits: [
-        'Minimize taxation over time',
-        'Stay up to date on regulatory changes',
-        'Make adjustments as you grow',
+        '/images/girl_golf.webp',
+      // benefits: [
+      //   'Minimize taxation over time',
+      //   'Stay up to date on regulatory changes',
+      //   'Make adjustments as you grow',
+      // ],
+      events: [
+        {
+          icon: TrendingUp,
+          text: 'Tax-efficient withdrawal strategies',
+        },
+        {
+          icon: FileText,
+          text: 'Stay current with tax law changes',
+        },
+        {
+          icon: Coins,
+          text: 'Optimize investment locations',
+        },
+        {
+          icon: Scale,
+          text: 'Balance growth and income needs',
+        },
       ],
       imagePosition: 'left',
     },

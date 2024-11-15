@@ -19,7 +19,7 @@ export default function Navigation() {
             <img 
               src={APP_CONFIG.branding.logo.url} 
               alt={APP_CONFIG.branding.logo.alt}
-              className="h-8 w-8 rounded-full object-cover"
+              className="w-full max-w-[80px]"
             />
           </a>
 

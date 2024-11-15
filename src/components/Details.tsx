@@ -23,14 +23,14 @@ export default function Details() {
               <FadeIn
                 direction={detail.imagePosition === 'left' ? 'left' : 'right'}
                 viewPort
-                className={
+                className={`${
                   detail.imagePosition === 'right' ? 'lg:col-start-2' : ''
-                }
+                } aspect-[3/4]`}
               >
                 <img
                   src={detail.image}
                   alt={detail.title}
-                  className="rounded-2xl shadow-xl"
+                  className="w-full h-full object-cover object-center rounded-2xl shadow-xl"
                 />
               </FadeIn>
 
@@ -52,22 +52,45 @@ export default function Details() {
                   delay={0.2}
                   className="mt-8 space-y-4"
                 >
-                  {detail.benefits.map((benefit, index) => (
-                    <div key={index} className="flex items-center">
-                      <svg
-                        className={`h-5 w-5 ${theme.styles.primaryText}`}
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <span className="ml-3 text-gray-600">{benefit}</span>
+                  {detail.events ? (
+                    <div className="grid gap-4 max-w-[640px]">
+                      {detail.events.map((event, eventIndex) => {
+                        const Icon = event.icon;
+                        return (
+                          <div
+                            key={eventIndex}
+                            className="bg-white shadow-sm rounded-xl border border-gray-200 p-4"
+                          >
+                            <div className="flex items-center space-x-4">
+                              <div className={`p-2 rounded-xl ${theme.styles.accent}`}>
+                                <Icon className={`w-5 h-5 ${theme.styles.primaryText}`} />
+                              </div>
+                              <span className="text-gray-900 text-base">
+                                {event.text}
+                              </span>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
-                  ))}
+                  ) : (
+                    detail.benefits?.map((benefit, benefitIndex) => (
+                      <div key={benefitIndex} className="flex items-center">
+                        <svg
+                          className={`h-5 w-5 ${theme.styles.primaryText}`}
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <span className="ml-3 text-gray-600">{benefit}</span>
+                      </div>
+                    ))
+                  )}
                 </FadeIn>
               </FadeIn>
             </div>
