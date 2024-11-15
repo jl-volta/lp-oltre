@@ -227,20 +227,20 @@ export const defaultContent = {
     subtitle: 'Hear what our users have to say',
     items: [
       {
-        quote: 'Definitely easier than what I was doing before.',
+        quote: 'Exactly what I was looking for!',
         author: 'Sarah L.',
         role: 'NB, Canada',
         company: '',
       },
       {
-        quote: "I don't think I could go back to my old spreadsheets.",
+        quote: "Absolutely love the calculation tools",
         author: 'Mark C.',
         role: 'ON, United States',
         company: '',
       },
       {
-        quote: "It's surprisingly easy!",
-        author: 'Alan M.',
+        quote: "The best part is the confidence and peace of mind it brings.",
+        author: 'Gail Lethbridge.',
         role: 'BC, Canada',
         company: '',
       },
